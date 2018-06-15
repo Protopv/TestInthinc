@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="ReportTestSuite" verbose="1">
+
+	<test name="ReportTest">
+		<classes>
+			<class name="com.inthinc.my.ReportTests">
+
+			</class>
+		</classes>
+	</test>
+
+	<test name="ReportHosTest">
+		<classes>
+			<class name="com.inthinc.my.ReportHosTests">
+
+			</class>
+		</classes>
+	</test>
+
+</suite>

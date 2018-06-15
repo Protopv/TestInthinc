@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="ReportTestSuite" verbose="1">
+
+	<test name="driverLuisTest">
+		<classes>
+			<class name="com.report.inthinc.LuisDriverTest">
+
+			</class>
+		</classes>
+	</test>
+
+	<test name="driverKrierTest">
+		<classes>
+			<class name="com.report.inthinc.KrierDriverTest">
+
+			</class>
+		</classes>
+	</test>
+
+	<test name="driverKyleTest">
+		<classes>
+			<class name="com.report.inthinc.KyleDriverTest">
+
+			</class>
+		</classes>
+	</test>
+	
+		<test name="driverWentzTest">
+		<classes>
+			<class name="com.report.inthinc.WentzDriverTest">
+
+			</class>
+		</classes>
+	</test>
+
+</suite>

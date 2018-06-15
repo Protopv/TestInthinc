@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [NegativeTestSuite]">
+  <test thread-count="5" name="NegativeUsernameTest-CH(failed)">
+    <parameter name="password" value="10105100"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="expectedMessage" value="Your username is invalid!"/>
+    <parameter name="username" value="incorrectUsername"/>
+    <classes>
+      <class name="com.inthinc.my.NegativeTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="negativeTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.inthinc.my.NegativeTests -->
+    </classes>
+  </test> <!-- NegativeUsernameTest-CH(failed) -->
+  <test thread-count="5" name="NegativeUsernameTest-FF(failed)">
+    <parameter name="password" value="10105100"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="expectedMessage" value="Your username is invalid!"/>
+    <parameter name="username" value="incorrectUsername"/>
+    <classes>
+      <class name="com.inthinc.my.NegativeTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="negativeTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.inthinc.my.NegativeTests -->
+    </classes>
+  </test> <!-- NegativeUsernameTest-FF(failed) -->
+  <test thread-count="5" name="NegativePasswordTest-CH(failed)">
+    <parameter name="password" value="incorrectPassword"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="expectedMessage" value="Your password is invalid!"/>
+    <parameter name="username" value="eprotopopov3951"/>
+    <classes>
+      <class name="com.inthinc.my.NegativeTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="negativeTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.inthinc.my.NegativeTests -->
+    </classes>
+  </test> <!-- NegativePasswordTest-CH(failed) -->
+  <test thread-count="5" name="NegativePasswordTest-FF(failed)">
+    <parameter name="password" value="incorrectPassword"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="expectedMessage" value="Your password is invalid!"/>
+    <parameter name="username" value="eprotopopov3951"/>
+    <classes>
+      <class name="com.inthinc.my.NegativeTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="negativeTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.inthinc.my.NegativeTests -->
+    </classes>
+  </test> <!-- NegativePasswordTest-FF(failed) -->
+</suite> <!-- Failed suite [NegativeTestSuite] -->

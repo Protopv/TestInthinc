@@ -1,0 +1,49 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="EldRecordReportTestsSuite" verbose="1">
+
+	<test name="EldReportTest-CH">
+		<parameter name="username" value="incorrectUsername"></parameter>
+		<parameter name="password" value="10105100"></parameter>
+		<parameter name="expectedMessage" value="The credentials you provided cannot be determined to be authentic."></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.inthinc.my.EldRecordReportTests">
+			</class>
+		</classes>
+	</test>
+	
+	<test name="EldReportTest-FF">
+		<parameter name="username" value="incorrectUsername"></parameter>
+		<parameter name="password" value="10105100"></parameter>
+		<parameter name="expectedMessage" value="The credentials you provided cannot be determined to be authentic."></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.inthinc.my.EldRecordReportTests">
+			</class>
+		</classes>
+	</test>
+	
+	<test name="HosReportTest-CH">
+		<parameter name="username" value="eprotopopov3951"></parameter>
+		<parameter name="password" value="incorrectPassword"></parameter>
+		<parameter name="expectedMessage" value="The credentials you provided cannot be determined to be authentic."></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.inthinc.my.EldRecordReportTests">
+			</class>
+		</classes>
+	</test>
+	
+	<test name="HosReportTest-FF">
+		<parameter name="username" value="eprotopopov3951"></parameter>
+		<parameter name="password" value="incorrectPassword"></parameter>
+		<parameter name="expectedMessage" value="The credentials you provided cannot be determined to be authentic."></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.inthinc.my.EldRecordReportTests">
+			</class>
+		</classes>
+	</test>
+
+</suite>
