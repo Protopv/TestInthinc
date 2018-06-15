@@ -80,22 +80,7 @@ public class EldRecordReportTests {
 		//choose ELD Record Report
 		new Select(driver.findElement(By.id("hosReports_form:hosReports-report"))).selectByVisibleText("ELD Record of Duty Status Report");
 	    driver.findElement(By.xpath("//option[@value='118']")).click();
-		
-		
-		//choose Report On - Driver
-		//choose driver Mark E Krier
-		//click HTML BUTTON
-		//check fields  top - ELD RECORD OF DUTY STATUS
-		//check fields	Driver: Krier, Mark E
-		//check fields	Driver ID: 115874
-		//check fields Driver's License Number:942372179
-		//check fields Driver's License State: CO
-		//check fields Carrier: Complete Energy Services Inc.
-		
-		
-		
-		
-		
+				
 		
 		// Verification
 		WebElement errorMessageElement = driver.findElement(By.xpath("//p[@id='credentials.errors']"));
