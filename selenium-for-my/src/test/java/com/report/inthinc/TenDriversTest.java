@@ -20,10 +20,10 @@ public class TenDriversTest extends TenTest {
 	public void tenDriversTest(String username, String password, String expectedErrorMessage) {
 		System.out.println("Starting negativeTest");
 
-		// choose driver Mark E Krier
+		// choose driver Mark
 		driver.findElement(By.id("hosReports_form:hosReports-groupDriverParam")).click();
 		new Select(driver.findElement(By.id("hosReports_form:hosReports-groupDriverParam")))
-				.selectByVisibleText("Mark E Krier");
+				.selectByVisibleText("Mark");
 		driver.findElement(By.xpath("//option[@value='66870']")).click();
 
 		// click HTML BUTTON
