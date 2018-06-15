@@ -25,10 +25,10 @@ public class ReportHosTests extends MyTest {
 		new Select(driver.findElement(By.id("hosReports_form:grouporDriverSelection"))).selectByVisibleText("Driver");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-		// choose driver Mark E Krier
+		// choose driver Mark 
 		driver.findElement(By.id("hosReports_form:hosReports-groupDriverParam")).click();
 		new Select(driver.findElement(By.id("hosReports_form:hosReports-groupDriverParam")))
-				.selectByVisibleText("Mark E Krier");
+				.selectByVisibleText("Mark");
 		driver.findElement(By.xpath("//option[@value='66870']")).click();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
@@ -55,19 +55,19 @@ public class ReportHosTests extends MyTest {
 				"actualOneCalendarDay does not contain expectedOneCalendarDay\nexpectedSuccessTopBody: "
 						+ expectedOneCalendarDay + "\nexpectedSuccessTopBody: " + actualOneCalendarDay);
 
-		// check fields Driver: Krier, Mark E
+		// check fields Driver: Krier
 		WebElement successDriverMessage = driver
 				.findElement(By.xpath("//span[@id='hosReports_htmlText']/table/tbody/tr[14]/td[2]/p/span"));
-		String expectedSuccessDriverMessage = "Mark E Krier";
+		String expectedSuccessDriverMessage = "Mark";
 		String actualSuccessDriverMessage = successDriverMessage.getText();
 		Assert.assertTrue(actualSuccessDriverMessage.contains(expectedSuccessDriverMessage),
 				"actualSuccessDriverMessage does not contain expectedSuccessDriverMessage\nexpectedSuccessDriverMessage: "
 						+ expectedSuccessDriverMessage + "\nactualSuccessDriverMessage: " + actualSuccessDriverMessage);
 
-		// check fields Driver ID: 115874
+		// check fields Driver ID: 11
 		WebElement successIdMessage = driver
 				.findElement(By.xpath("//span[@id='hosReports_htmlText']/table/tbody/tr[14]/td[4]/p/span"));
-		String expectedSuccessIdMessage = "115874";
+		String expectedSuccessIdMessage = "11";
 		String actualSuccessIdMessage = successIdMessage.getText();
 		Assert.assertTrue(actualSuccessIdMessage.contains(expectedSuccessIdMessage),
 				"actualSuccessIdMessage does not contain expectedSuccessIdMessage\nexpectedSuccessIdMessage: "
