@@ -24,11 +24,11 @@ public class PositiveTests {
 
 		// enter username
 		WebElement username = driver.findElement(By.xpath("//input[@id='username']"));
-		username.sendKeys("eprotopopov3951");
+		username.sendKeys("TutUsername");
 
 		// enter password
 		WebElement password = driver.findElement(By.xpath("//input[@id='password']"));
-		password.sendKeys("10105100");
+		password.sendKeys("tutPassword");
 
 		// push log in button
 		WebElement logInButton = driver.findElement(By.xpath("//button[@type='submit']"));
