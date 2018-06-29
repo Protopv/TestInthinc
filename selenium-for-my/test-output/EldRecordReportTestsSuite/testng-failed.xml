@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [EldRecordReportTestsSuite]">
   <test thread-count="5" name="EldReportTest-CH(failed)">
-    <parameter name="password" value="10105100"/>
+    <parameter name="password" value="password"/>
     <parameter name="browser" value="chrome"/>
     <parameter name="expectedMessage" value="The credentials you provided cannot be determined to be authentic."/>
     <parameter name="username" value="incorrectUsername"/>
@@ -17,7 +17,7 @@
     </classes>
   </test> <!-- EldReportTest-CH(failed) -->
   <test thread-count="5" name="EldReportTest-FF(failed)">
-    <parameter name="password" value="10105100"/>
+    <parameter name="password" value="password"/>
     <parameter name="browser" value="firefox"/>
     <parameter name="expectedMessage" value="The credentials you provided cannot be determined to be authentic."/>
     <parameter name="username" value="incorrectUsername"/>
@@ -35,7 +35,7 @@
     <parameter name="password" value="incorrectPassword"/>
     <parameter name="browser" value="chrome"/>
     <parameter name="expectedMessage" value="The credentials you provided cannot be determined to be authentic."/>
-    <parameter name="username" value="eprotopopov3951"/>
+    <parameter name="username" value="user"/>
     <classes>
       <class name="com.inthinc.my.EldRecordReportTests">
         <methods>
@@ -50,7 +50,7 @@
     <parameter name="password" value="incorrectPassword"/>
     <parameter name="browser" value="firefox"/>
     <parameter name="expectedMessage" value="The credentials you provided cannot be determined to be authentic."/>
-    <parameter name="username" value="eprotopopov3951"/>
+    <parameter name="username" value="user"/>
     <classes>
       <class name="com.inthinc.my.EldRecordReportTests">
         <methods>
