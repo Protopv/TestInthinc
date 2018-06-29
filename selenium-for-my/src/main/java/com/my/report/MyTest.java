@@ -36,11 +36,11 @@ public class MyTest {
 		WebElement password = driver.findElement(By.xpath("//input[@id='password']"));
 		password.sendKeys("tutpassword");
 
-		// push log in button
+		// click log in button
 		WebElement logInButton = driver.findElement(By.xpath("//button[@type='submit']"));
 		logInButton.click();
 
-		// log out button is visible
+		// Overview is visible
 		WebElement logOutButton = driver.findElement(By.id("navigation:layout-navigationAdmin"));
 		Assert.assertTrue(logOutButton.isDisplayed(), "Overview");
 
